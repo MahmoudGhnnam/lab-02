@@ -1,5 +1,5 @@
 'use strict';
-
+var score = 0;
 var userName = prompt('What\'s your name?');
 console.log('welcome ' + userName + ' to my site');
 alert('welcome ' + userName + ' to my site');
@@ -16,6 +16,7 @@ switch (userAnswre.toLocaleLowerCase()) {
 	case 'no':
 		console.log('user say\'s' + userAnswre.toLocaleLowerCase());
 		alert('it\'s correct');
+		score++;
 		break;
 
 	default:
@@ -35,6 +36,7 @@ switch (userAnswre.toLocaleLowerCase()) {
 	case 'yes':
 		console.log('user say\'s' + userAnswre.toLocaleLowerCase());
 		alert('it\'s correct');
+		score++;
 		break;
 
 	default:
@@ -54,6 +56,7 @@ switch (userAnswre.toLocaleLowerCase()) {
 	case 'yes':
 		console.log('user say\'s' + userAnswre.toLocaleLowerCase());
 		alert('it\'s correct');
+		score++;
 		break;
 
 	default:
@@ -73,6 +76,7 @@ switch (userAnswre.toLocaleLowerCase()) {
 	case 'yes':
 		console.log('user say\'s' + userAnswre.toLocaleLowerCase());
 		alert('it\'s correct');
+		score++;
 		break;
 
 	default:
@@ -91,6 +95,7 @@ if (userAnswre.toLocaleLowerCase() == 'yes') {
 else if (userAnswre == 'no') {
 	console.log('user say\'s' + userAnswre.toLocaleLowerCase());
 	alert('it\'s correct');
+	score++;
 }
 
 else {
@@ -108,10 +113,71 @@ if (userAnswre.toLocaleLowerCase() === 'no') {
 else if (userAnswre === 'yes') {
 	console.log('user say\'s' + userAnswre.toLocaleLowerCase());
 	alert('it\'s correct');
+	score++;
 }
 
 else {
 	alert('you should answre with yes or no')
 }
 
-alert('this is my quiz to my websit and now you\'r welcome  ' + userName)
+
+
+var numper = 6;
+var bool = false;
+
+for (var h = 0; h < 4; h++) {
+  var usernum = Number(prompt('guess the number in my mind From 1-10'));
+
+
+  if (usernum === numper) {
+    alert('Correct answer');
+    score++;
+    bool = true;
+  }
+  else if (usernum > numper) {
+    alert('too high');
+  }
+  else if (usernum < numper) {
+    alert('too low')
+  }
+  else ('Bad input');
+
+
+}
+if (!bool) {
+  alert('the correct number ' + numper);
+}
+
+
+var movie = ['your name', 'Spirited Away', 'Howl\'s moving castle'];
+var m = 0;
+var yes=false;
+
+while (m < 6) {
+  var userSay = prompt('What the best movie for me from top 10 movie').toUpperCase();
+
+
+  for (var i = 0; i < movie.length; i++) {
+    if (userSay === movie[i].toLocaleUpperCase()) {
+      alert('Thats true');
+      score++;
+      yes = true;
+      break;
+
+    }
+  }
+  if (yes) {
+    break;
+  }
+  m++;
+}
+
+alert("your score is" + score + "/7");
+
+
+
+
+
+
+
+
