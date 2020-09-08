@@ -100,7 +100,7 @@ else {
 var userAnswre = prompt('Have i worked before? [yes/no]'.toLocaleLowerCase());
 console.log('user answer ' + userAnswre.toLocaleLowerCase())
 
-if (userAnswre === 'no'.toLocaleLowerCase()) {
+if (userAnswre.toLocaleLowerCase() === 'no') {
 	console.log('user say\'s' + userAnswre);
 	alert('No! it\'s wrong');
 }
