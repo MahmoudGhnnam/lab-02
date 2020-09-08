@@ -1,0 +1,28 @@
+h1{
+    color: mediumaquamarine;
+    font-size: 100px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: square;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: mediumaquamarine;
+}
+
+body{
+    background-image: url(/img/mahmoud.jpg);
+    background-position: center;
+}
+
+ol {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgreen;
+}
+h2{
+    font-size: 100px;
+    color: mediumaquamarine;
+}
+
