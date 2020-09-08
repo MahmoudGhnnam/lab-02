@@ -88,7 +88,7 @@ if (userAnswre.toLocaleLowerCase() == 'yes') {
     alert('No! it\'s wrong');
 }
 
-else if (userAnswre.toLocaleLowerCase() == 'no') {
+else if (userAnswre == 'no') {
     console.log('user say\'s' + userAnswre);
     alert('it\'s correct');
 }
@@ -100,7 +100,7 @@ else {
 var userAnswre = prompt('Have i worked before? [yes/no]'.toLocaleLowerCase());
 console.log('user answer ' + userAnswre)
 
-if (userAnswre === 'no') {
+if (userAnswre === 'no'.toLocaleLowerCase()) {
     console.log('user say\'s' + userAnswre);
     alert('No! it\'s wrong');
 }
