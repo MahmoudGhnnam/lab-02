@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 var score = 0;
 var userName = prompt('What\'s your name?');
 console.log('welcome ' + userName + ' to my site');
@@ -172,7 +172,7 @@ while (m < 6) {
   m++;
 }
 
-alert("your score is" + score + "/7");*/
+alert("your score is" + score + "/7");
 
 
 
