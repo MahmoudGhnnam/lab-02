@@ -126,7 +126,7 @@ var numper = 6;
 var bool = false;
 
 for (var h = 0; h < 4; h++) {
-  var usernum = Number(prompt('guess the number in my mind From 1-10'));
+  var usernum = (prompt('guess the number in my mind From 1-10'));
 
 
   if (usernum === numper) {
@@ -149,7 +149,7 @@ if (!bool) {
 }
 
 
-var movie = ['your name', 'Spirited Away', 'Howl\'s moving castle'];
+var movie = ['your name', 'Spirited Away', 'Howl\'s moving castle', 'Inception', 'Wolf children'];
 var m = 0;
 var yes=false;
 
