@@ -1,5 +1,5 @@
 'use strict';
-var score = 0;
+/*var score = 0;
 var userName = prompt('What\'s your name?');
 console.log('welcome ' + userName + ' to my site');
 alert('welcome ' + userName + ' to my site');
@@ -172,7 +172,27 @@ while (m < 6) {
   m++;
 }
 
+alert("your score is" + score + "/7");*/
+
+function movie(m){
+for (var i = 0; i < movie.length; i++) {
+    if (userSay === movie[i].toLocaleUpperCase()) {
+      alert('Thats true');
+      score++;
+      yes = true;
+      break;
+
+	}
+  }
+  if (yes) {
+    break;
+  }
+  m++;
+}
+movie();
+
 alert("your score is" + score + "/7");
+
 
 
 
