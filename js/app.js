@@ -149,7 +149,7 @@ if (!bool) {
 }
 
 
-var movie = ['your name', 'Spirited Away', 'Howl\'s moving castle', 'Inception', 'Wolf children'];
+var movie = ['your name', 'Spirited Away', 'Howl\'s moving castle', 'Inception',];
 var m = 0;
 var yes=false;
 
@@ -164,7 +164,7 @@ while (m < 6) {
       yes = true;
       break;
 
-    }
+	}
   }
   if (yes) {
     break;
