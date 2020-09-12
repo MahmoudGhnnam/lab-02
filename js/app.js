@@ -1,5 +1,5 @@
 'use strict';
-var score = 0;
+/*var score = 0;
 var userName = prompt('What\'s your name?');
 console.log('welcome ' + userName + ' to my site');
 alert('welcome ' + userName + ' to my site');
@@ -199,7 +199,7 @@ function q8() {
   alert("your score is" + score + "/8");
 }
 q8();
-
+*/
 
 
 
