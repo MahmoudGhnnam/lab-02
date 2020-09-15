@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';*/
 /*var score = 0;
 var userName = prompt('What\'s your name?');
 console.log('welcome ' + userName + ' to my site');
