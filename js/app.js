@@ -1,21 +1,17 @@
 'use strict';
 var score = 0;
 var userName = prompt('What\'s your name?');
-console.log('welcome ' + userName + ' to my site');
 alert('welcome ' + userName + ' to my site');
 
 function q1() {
   var userAnswre = prompt('is my name khaled? [yes/no]'.toLocaleLowerCase());
-  console.log('user answer ' + userAnswre.toLocaleLowerCase())
   
   switch (userAnswre.toLocaleLowerCase()) {
-    case 'yes':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+    case 'yes' : case 'y' :
       alert('No! it\'s wrong');
       break;
   
-    case 'no':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+    case 'no': case 'n':
       alert('it\'s correct');
       score++;
       break;
@@ -29,17 +25,14 @@ q1();
 
 function q2() {
   var userAnswre = prompt('do i have a youtube channel? [yes/no]'.toLocaleLowerCase());
-  console.log('user answer ' + userAnswre)
   
   switch (userAnswre.toLocaleLowerCase()) {
-    case 'no':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+    case 'no' : case 'n' :
       alert('No! it\'s wrong');
       break;
   
-    case 'yes':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
-      alert('it\'s correct');
+      case 'yes' : case 'y' :
+        alert('it\'s correct');
       score++;
       break;
   
@@ -52,17 +45,14 @@ q2();
 
 function q3(){
   var userAnswre = prompt('Am I from Syria? [yes/no]'.toLocaleLowerCase());
-  console.log('user answer ' + userAnswre)
   
   switch (userAnswre.toLocaleLowerCase()) {
-    case 'no':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+    case 'no' : case 'n' :
       alert('No! it\'s wrong');
       break;
   
-    case 'yes':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
-      alert('it\'s correct');
+      case 'yes' : case 'y' :
+        alert('it\'s correct');
       score++;
       break;
   
@@ -75,17 +65,14 @@ q3();
 
 function q4() {
   var userAnswre = prompt('Did I graduate from LTUC? [yes/no]'.toLocaleLowerCase());
-  console.log('user answer ' + userAnswre)
   
   switch (userAnswre.toLocaleLowerCase()) {
-    case 'no':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+    case 'no' : case 'n' :
       alert('No! it\'s wrong');
       break;
   
-    case 'yes':
-      console.log('user say\'s' + userAnswre.toLocaleLowerCase());
-      alert('it\'s correct');
+      case 'yes' : case 'y' :
+        alert('it\'s correct');
       score++;
       break;
   
@@ -97,16 +84,13 @@ function q4() {
 q4();
 
 function q5() {
-  var userAnswre = prompt('my channel on youtube named Mahmoud? [yes/no]');
-  console.log('user answer ' + userAnswre)
+  var userAnswre = prompt('my channel on youtube named Mahmoud? [yes/no]'.toLocaleLowerCase());
   
-  if (userAnswre.toLocaleLowerCase() == 'yes') {
-    console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+  if (userAnswre == 'yes' || userAnswre == 'y') {
     alert('No! it\'s wrong');
   }
   
-  else if (userAnswre == 'no') {
-    console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+  else if (userAnswre == 'no' || userAnswre == 'n') {
     alert('it\'s correct');
     score++;
   }
@@ -120,15 +104,12 @@ q5();
 
 function q6() {
   var userAnswre = prompt('Have i worked before? [yes/no]'.toLocaleLowerCase());
-  console.log('user answer ' + userAnswre.toLocaleLowerCase())
   
-  if (userAnswre.toLocaleLowerCase() === 'no') {
-    console.log('user say\'s' + userAnswre);
+  if (userAnswre == 'no' || userAnswre == 'n') {
     alert('No! it\'s wrong');
   }
   
-  else if (userAnswre === 'yes') {
-    console.log('user say\'s' + userAnswre.toLocaleLowerCase());
+  else if (userAnswre == 'yes' || userAnswre == 'y') {
     alert('it\'s correct');
     score++;
   }
